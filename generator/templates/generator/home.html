@@ -1,0 +1,33 @@
+{% extends 'generator/base.html' %}
+
+{% block content %}
+
+<div class="col-md-4 offset-md-4">
+    <form action="{% url 'password' %}" class="card card-body p-5">
+        <h2 style="align-self: center; text-align: center;">Password settings</h2>
+        <br>
+        
+        <div class="slider-row" style="display: flex;flex-wrap: nowrap;">
+            Length
+            <input type="range" name="length" id="length" class="form-range" value="6" min="6" max="20" step="2" oninput="this.nextElementSibling.value = this.value" style="padding: 12px;">
+            <output>6</output>
+        </div>
+        <br>
+        <div class="form-check form-switch my-2">
+            <label for="uppercase" class="form-check-label" title="...ABCDEFGH...">Uppercase</label>
+            <input type="checkbox" name="uppercase" id="uppercase" class="form-check-input" title="...ABCDEFGH...">
+        </div>
+        <div class="form-check form-switch my-2">
+            <label for="numbers" class="form-check-label" title="...123456...">Numbers</label>
+            <input type="checkbox" name="numbers" id="numbers" class="form-check-input" title="...123456...">
+        </div>
+        <div class="form-check form-switch my-2">
+            <label for="special" class="form-check-label" title="...@#$%...">Special</label>
+            <input type="checkbox" name="special" id="special" class="form-check-input" title="...@#$%...">
+        </div>
+        <br>
+        <button class="btn btn-primary">Generate</button>
+    </form>
+</div>
+
+{% endblock %}    
