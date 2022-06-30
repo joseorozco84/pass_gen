@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Verdana, sans-serif;
 }
 
 body {
@@ -32,10 +31,19 @@ body {
 .custom-menu-links > li > a, 
 .navbar-brand {
     color: white;
+
 }
 
 .custom-menu-links > li > a:hover,
 .custom-menu-links > li > a:focus,
 .custom-menu-links > li > a:active {
-    color: rgb(169, 206, 37);
+    color: rgb(134, 183, 255);
+}
+
+.custom-password-title {
+    color: rgb(134, 183, 255);
+}
+
+.custom-password-settings {
+    color: rgb(134, 183, 255);
 }
