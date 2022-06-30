@@ -18,14 +18,14 @@ body {
 }
 
 .navbar {
-    background-color: rgb(40, 45, 49);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(40, 45, 49) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 .card {
-    background-color: rgb(40, 45, 49) ;
-    color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(40, 45, 49) !important;
+    color: white !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 .custom-menu-links > li > a, 
@@ -42,8 +42,27 @@ body {
 
 .custom-password-title {
     color: rgb(134, 183, 255);
+    margin-bottom: 0 !important;
 }
 
 .custom-password-settings {
     color: rgb(134, 183, 255);
+    margin-bottom: 0 !important;
+}
+
+.dropdown-menu {
+    background-color: rgb(40, 45, 49) !important;
+}
+
+.custom-btn {
+    color: steelblue;
+    background: transparent;
+    border: none;
+}
+
+.custom-password {
+    margin-bottom: 0 !important;
+}
+.tooltip-inner {
+    background-color: rgb(134, 183, 255);
 }

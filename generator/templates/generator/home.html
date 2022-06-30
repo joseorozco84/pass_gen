@@ -3,14 +3,15 @@
 {% block content %}
 
 <div class="col-md-4 offset-md-4">
-    <form action="{% url 'password' %}" class="card card-body p-5">
+    <form action="{% url 'password' %}" class="card card-body">
         <h2 class="custom-password-settings" style="align-self: center; text-align: center;">Password settings</h2>
+        <hr>
         <br>
         
         <div class="slider-row" style="display: flex;flex-wrap: nowrap;">
             Length
-            <input type="range" name="length" id="length" class="form-range" value="6" min="6" max="20" step="2" oninput="this.nextElementSibling.value = this.value" style="padding: 12px;">
-            <output>6</output>
+            <input type="range" name="length" id="length" class="form-range" value="8" min="8" max="20" step="2" oninput="this.nextElementSibling.value = this.value" style="padding: 12px;">
+            <output>8</output>
         </div>
         <br>
         <div class="form-check form-switch my-2">

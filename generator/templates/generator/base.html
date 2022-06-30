@@ -50,5 +50,32 @@
         {% block content %}
         {% endblock %}
     </div>
+
+    <script>
+        function copy(id) {
+            var r = document.createRange();
+            r.selectNode(document.getElementById(id));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(r);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            console.log("Copied to clipboard");
+        }
+    </script>
+    <script>
+        // bootstrap toast
+        const toastTrigger = document.getElementById('copyBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', () => {
+            const toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+            })
+        // bootstrap tooltip
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    }
+    </script>
+
 </body>
 </html>
