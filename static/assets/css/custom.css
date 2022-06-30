@@ -55,7 +55,7 @@ body {
 }
 
 .custom-btn {
-    color: steelblue;
+    color: whitesmoke;
     background: transparent;
     border: none;
 }
@@ -65,4 +65,9 @@ body {
 }
 .tooltip-inner {
     background-color: rgb(134, 183, 255);
+}
+
+.toast {
+    background-color: rgb(40, 45, 49) !important;
+    color: whitesmoke !important;
 }
